@@ -197,8 +197,21 @@ footer h2 { margin-bottom: 2rem; }
         scroll-snap-align: center; /* Centers the card perfectly when swipe ends */
     }
     
-    /* Hide the floating buttons on mobile (users instinctively swipe on phones) */
-    .carousel-btn { display: none; }
+/* Bring buttons back on mobile and force them to the absolute front */
+    .carousel-btn { 
+        display: flex !important; 
+        position: absolute;
+        z-index: 1000; 
+        width: 45px; 
+        height: 45px;
+        font-size: 1.2rem;
+        background-color: var(--card-bg); 
+        border: 2px solid var(--accent);
+        color: var(--accent) !important; /* Forces the arrows to be bright blue */
+        box-shadow: 0 4px 10px rgba(0,0,0,0.8); 
+    }
+    .prev-btn { left: 10px; }
+    .next-btn { right: 10px; }
 
     /* Modal Zoom-in Fixes */
     .modal-content {
