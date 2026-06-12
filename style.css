@@ -1,0 +1,95 @@
+/* --- Global Styles --- */
+:root {
+    --bg-color: #050505;
+    --card-bg: #0f0f0f;
+    --text-primary: #f0f0f0;
+    --text-secondary: #a0a0a0;
+    --accent: #3b82f6; /* Professional Cloud Blue */
+    --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+}
+
+/* --- Professional Header --- */
+header {
+    padding: 2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #222;
+}
+
+.logo { font-weight: 700; font-size: 1.5rem; letter-spacing: -1px; }
+
+header nav a { color: var(--text-secondary); text-decoration: none; font-size: 0.9rem; transition: var(--transition); }
+header nav a:hover { color: var(--accent); }
+
+/* --- Hero & Profile Picture Animation --- */
+.profile-container {
+    perspective: 1000px;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: var(--transition);
+    transform-style: preserve-3d;
+}
+
+.profile-container:hover .profile-img {
+    transform: rotateY(180deg);
+}
+
+/* --- Project Grid (Vertical Shape) --- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 50px 5%;
+}
+
+.project-card {
+    background: var(--card-bg);
+    border: 1px solid #222;
+    padding: 25px;
+    border-radius: 20px;
+    aspect-ratio: 3/4; /* Vertical shape as requested */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.view-btn {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.view-btn:hover {
+    background: var(--accent);
+    color: white;
+}
