@@ -55,6 +55,18 @@ body {
 .nav-links a { text-decoration: none; color: var(--text-main); font-weight: 600; transition: color 0.3s; }
 .nav-links a:hover { color: var(--accent); }
 
+/* Navbar Custom Image Logo */
+.nav-logo-img {
+    height: 40px; /* Perfect height for standard navbars */
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.nav-logo-img:hover {
+    transform: scale(1.05); /* Gives it a slight 'pop' when hovered */
+}
+
 /* --- Hero Section --- */
 .hero { display: flex; align-items: center; justify-content: space-between; min-height: 100vh; padding: 0 10%; background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.1), transparent 40%); }
 .hero-content { max-width: 60%; }
