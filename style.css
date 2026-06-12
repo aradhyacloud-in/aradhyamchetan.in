@@ -87,6 +87,19 @@ body {
 .cert-card:hover { transform: translateX(10px); }
 .cert-card i { font-size: 2rem; color: var(--accent); margin-bottom: 0.5rem; }
 
+/* Styling for official image badges */
+.cert-badge {
+    width: 90px; /* Perfect size for readability without overwhelming the card */
+    height: auto;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 5px 15px rgba(59, 130, 246, 0.4)); /* Subtle blue neon glow */
+    transition: transform 0.3s ease;
+}
+
+.cert-card:hover .cert-badge {
+    transform: scale(1.1); /* Slight zoom when hovering over the card */
+}
+
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
 .skill-category { background: var(--card-bg); padding: 2rem; border-radius: 10px; transition: 0.3s; border-bottom: 2px solid transparent; }
 .skill-category:hover { transform: translateY(-5px); border-bottom: 2px solid var(--accent); box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
