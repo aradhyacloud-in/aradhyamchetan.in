@@ -171,10 +171,29 @@ footer h2 { margin-bottom: 2rem; }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes slideInRight { from { opacity: 0; transform: translateX(50px); } to { opacity: 1; transform: translateX(0); } }
 
-/* Responsiveness */
+/* --- Responsiveness & Mobile View --- */
 @media(max-width: 900px) {
-    .hero, .about-grid { flex-direction: column; text-align: center; gap: 3rem; }
+    /* Stack elements vertically and center them */
+    .hero, .about-grid { flex-direction: column; text-align: center; gap: 3rem; padding-top: 120px; }
     .hero-content { max-width: 100%; }
-    .hero-buttons { justify-content: center; }
+    
+    /* Scale down the massive fonts for mobile */
+    .hero-content h1 { font-size: 2.8rem; }
+    .hero-content h2 { font-size: 1.5rem; }
+    
+    /* Ensure buttons don't break the screen width */
+    .hero-buttons { justify-content: center; flex-wrap: wrap; }
+    
+    /* Scale down the flipping profile picture */
+    .flip-container { width: 280px; height: 280px; margin: 0 auto; }
+    
+    /* Make project cards take up the full screen width */
     .project-card { min-width: calc(100% - 1rem); }
+}
+
+/* Extra tweaks for very small phones (like older iPhones) */
+@media(max-width: 480px) {
+    .hero-content h1 { font-size: 2.2rem; }
+    .section-title { font-size: 2rem; }
+    .flip-container { width: 240px; height: 240px; }
 }
