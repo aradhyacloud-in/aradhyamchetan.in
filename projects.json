@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Identity and Access Management",
+    "aim": "Implement secure RBAC and least-privilege access across cloud environments.",
+    "tools": ["AWS IAM", "Terraform", "Python"],
+    "successRate": "99.9%",
+    "timeline": "4 Weeks"
+  },
+  {
+    "id": 2,
+    "title": "AWS Migration",
+    "aim": "Seamless migration of on-premise legacy apps to cloud-native infrastructure.",
+    "tools": ["AWS Migration Hub", "CloudEndure", "EC2"],
+    "successRate": "100%",
+    "timeline": "6 Weeks"
+  },
+  {
+    "id": 3,
+    "title": "Next.JS Portfolio Site",
+    "aim": "Scalable, high-performance portfolio hosting using AWS Amplify.",
+    "tools": ["Next.js", "AWS Amplify", "GitHub Actions"],
+    "successRate": "99%",
+    "timeline": "2 Weeks"
+  }
+]
