@@ -1,26 +1,56 @@
 [
-  {
-    "id": 1,
-    "title": "Identity and Access Management",
-    "aim": "Implement secure RBAC and least-privilege access across cloud environments.",
-    "tools": ["AWS IAM", "Terraform", "Python"],
-    "successRate": "99.9%",
-    "timeline": "4 Weeks"
-  },
-  {
-    "id": 2,
-    "title": "AWS Migration",
-    "aim": "Seamless migration of on-premise legacy apps to cloud-native infrastructure.",
-    "tools": ["AWS Migration Hub", "CloudEndure", "EC2"],
-    "successRate": "100%",
-    "timeline": "6 Weeks"
-  },
-  {
-    "id": 3,
-    "title": "Next.JS Portfolio Site",
-    "aim": "Scalable, high-performance portfolio hosting using AWS Amplify.",
-    "tools": ["Next.js", "AWS Amplify", "GitHub Actions"],
-    "successRate": "99%",
-    "timeline": "2 Weeks"
-  }
+    {
+        "id": 1,
+        "title": "Identity & Access Management",
+        "aim": "Implement robust IAM policies to enforce least-privilege access across AWS infrastructure.",
+        "tools": "AWS IAM, Active Directory, SSO, Terraform",
+        "success": "Reduced unauthorized access incidents to 0; passed SOC 2 compliance audit.",
+        "timeline": "4 Weeks",
+        "desc": "Designed comprehensive IAM roles and RBAC policies. Integrated third-party SSO and MFA for all administrative access. Automated access reviews using custom Python scripts and AWS CloudTrail logs."
+    },
+    {
+        "id": 2,
+        "title": "Enterprise AWS Migration",
+        "aim": "Migrate legacy on-premise applications to highly available, secure AWS infrastructure.",
+        "tools": "AWS EC2, VPC, RDS, CloudFormation, DMS",
+        "success": "Achieved 99.99% uptime, reduced infrastructure costs by 30%.",
+        "timeline": "3 Months",
+        "desc": "Led the migration of multi-tier applications to AWS. Provisioned infrastructure using CloudFormation. Configured Auto Scaling Groups and Application Load Balancers for high availability."
+    },
+    {
+        "id": 3,
+        "title": "Next.JS Portfolio Site on AWS",
+        "aim": "Deploy a modern, serverless web application using CI/CD.",
+        "tools": "Next.JS, AWS Amplify, Route53, GitHub Actions",
+        "success": "Sub-second global load times via edge caching.",
+        "timeline": "2 Weeks",
+        "desc": "Built a fully automated deployment pipeline. Changes merged to the main branch automatically trigger builds and deployments via AWS Amplify, complete with SSL management."
+    },
+    {
+        "id": 4,
+        "title": "CloudPipe DevOps CI/CD",
+        "aim": "Automate build and deployment pipelines for microservices.",
+        "tools": "Jenkins, Docker, Kubernetes (EKS), Helm",
+        "success": "Reduced deployment time from 2 hours to 5 minutes.",
+        "timeline": "6 Weeks",
+        "desc": "Architected declarative Jenkins pipelines. Containerized Java/Spring Boot microservices using Docker and deployed them to EKS using Helm charts. Implemented automated security scanning in the pipeline."
+    },
+    {
+        "id": 5,
+        "title": "ServerTask: Serverless API",
+        "aim": "Build a highly scalable backend without provisioning servers.",
+        "tools": "AWS Lambda, API Gateway, DynamoDB, Python",
+        "success": "Handled 10k+ concurrent requests with zero maintenance.",
+        "timeline": "3 Weeks",
+        "desc": "Developed RESTful APIs using API Gateway and Python Lambda functions. Stored state in DynamoDB, utilizing KMS for data-at-rest encryption."
+    },
+    {
+        "id": 6,
+        "title": "Containerize NodeJS App",
+        "aim": "Create a reproducible container environment for a Node.js application with a persistent database.",
+        "tools": "Node.js, Docker, Docker-Compose, MySQL",
+        "success": "Standardized development environments and streamlined micro-service deployment.",
+        "timeline": "2 Weeks",
+        "desc": "Wrote multi-stage Dockerfiles. Configured bind mounts for local development and persistent volumes for the MySQL database. Set up Docker networking for secure inter-container communication using Docker-Compose."
+    }
 ]
